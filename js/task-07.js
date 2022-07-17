@@ -8,3 +8,14 @@
 // 3) Отримати доступ до span
 // 4) записати значення інпута в стилі нашого тега span (span.styles.fontSize = value)
 
+const input = document.querySelector('#font-size-control');
+const span = document.querySelector('#text');
+
+// const valueInput = (e) => {
+//     span.style.fontSize = e.target.value + 'px';
+// };
+// input.addEventListener('input', valueInput);
+
+input.addEventListener('input', (e) => {
+     span.style.fontSize = e.target.value + 'px';
+});
